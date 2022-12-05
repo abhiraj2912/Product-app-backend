@@ -13,17 +13,22 @@ public class ProductController {
     }
 
     @PostMapping("/add")
-    public String AddProducts(){
+    public String AddProduct(){
         return "Add Products page";
     }
 
     @PostMapping("/search")
-    public String SearchProducts(){
+    public String SearchProduct(){
         return "Search Products";
     }
 
     @PostMapping("/edit")
-    public String EditProducts(){
+    public String EditProduct(){
         return "Edit Products";
+    }
+
+    @GetMapping("/view")
+    public String ViewProducts(){
+        return "View Products";
     }
 }
