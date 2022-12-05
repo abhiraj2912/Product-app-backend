@@ -10,4 +10,9 @@ public class ProductController {
     public String ProductHome(){
         return "Welcome to Products App";
     }
+
+    @GetMapping("/add")
+    public String AddProducts(){
+        return "Add Products page";
+    }
 }
